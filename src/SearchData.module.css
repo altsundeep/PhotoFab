@@ -1,0 +1,159 @@
+.container {
+  line-height: 0;
+  column-count: 5;
+  column-gap: 0px;
+  margin-left: 10rem;
+  margin-right: 10rem;
+}
+
+.container img {
+  width: 100% !important;
+  height: auto !important;
+  border-left: 5px solid #fefefe;
+  border-top: 5px solid #fefefe;
+  object-fit: contain;
+}
+button {
+  background: none;
+  border: none;
+  outline: transparent;
+  padding: 5px;
+  cursor: pointer;
+}
+
+input[type="submit"] {
+  background-color: blanchedalmond;
+  padding: 10px 12px;
+  border-radius: 5px;
+  border: transparent;
+  outline: none;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.8);
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+/* handling over lay */
+.overlay {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  width: 100%;
+  height: 100%;
+  transition: 0.5s ease;
+  opacity: 0;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+  border-left: 5px solid #fefefe;
+  border-top: 5px solid #fefefe;
+}
+
+.overlay:hover {
+  opacity: 1;
+}
+
+.container .imgcontainer {
+  position: relative;
+  height: auto;
+}
+
+/* handling overlay icons */
+.faDownload {
+  color: #fff;
+  padding: 5px;
+}
+
+.likes {
+  color: red;
+}
+
+.icon_container span {
+  color: #fff;
+  font-size: 16px;
+  padding: 5px;
+}
+
+.icon_container {
+  display: flex;
+  align-items: center;
+}
+
+@media only screen and (max-width: 800px) {
+  .container {
+    line-height: 0;
+    column-count: 1;
+    column-gap: 5px;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+  }
+
+  /* handling over lay */
+  .overlay {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5); /* Black see-through */
+    width: 100%;
+    height: 100%;
+    transition: 0.5s ease;
+    opacity: 0;
+    font-size: 20px;
+    padding: 20px;
+    text-align: center;
+    border-left: 5px solid #fefefe;
+    border-top: 5px solid #fefefe;
+  }
+
+  .overlay:hover {
+    opacity: 1;
+  }
+
+  .container .imgcontainer {
+    position: relative;
+    height: auto;
+  }
+  .container img {
+    width: 100% !important;
+    height: auto !important;
+    border: 5px solid #fefefe;
+  }
+
+  /* handling overlay icons */
+  .faDownload {
+    display: flex;
+    color: #fff;
+  }
+
+  .likes {
+    color: red;
+  }
+
+  .icon_container span {
+    color: #fff;
+    font-size: 14px;
+    padding: 5px;
+  }
+
+  .icon_container {
+    display: flex;
+    align-items: center;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .container {
+    line-height: 0;
+    column-count: 1;
+    column-gap: 5px;
+  }
+
+  .container img {
+    width: 100% !important;
+    height: auto !important;
+    border-left: 2px solid #fefefe;
+    border-top: 2px solid #fefefe;
+  }
+}
